@@ -1,0 +1,452 @@
+:root {
+    --primary: #FF4500;
+    --dark: #161616;
+    --pure: #ffffff;
+    --ternary: #7e7d7d;
+    --light: #f2f2f2;
+    --secondary: #070606;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* -----------------------------SCROLL-------------------------------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.btn {
+    padding: 0.8rem 4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+section {
+    padding: 100px 100px;
+}
+
+.section-heading h1 {
+    color: var(--primary);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    /* line-height: 0.5; */
+}
+
+hr {
+    width: 5%;
+    text-align: center;
+    margin: 0 auto;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+hr+p {
+    color: var(--ternary);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+/* -------------------------NAVBAR----------------------------- */
+
+header nav {
+    margin: 0 10%;
+    padding: 10px 0;
+}
+
+header nav .left i {
+    font-size: 25px;
+    padding: 10px;
+    color: var(--primary);
+}
+
+header nav .left h1 {
+    font-weight: 300;
+    font-size: 25px;
+    padding: 10px;
+    color: var(--primary);
+}
+
+header nav .right a {
+    color: var(--primary);
+    font-size: 20px;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+header nav .right a:hover {
+    color: white;
+    background-color: var(--primary);
+}
+
+
+/* -------------------------HOME----------------------------- */
+
+header .homepage {
+    background-image: url("images/intro-carousel/3.jpg");
+    background-position: center;
+    height: 90vh;
+    background-size: cover;
+}
+
+header .homepage .left {
+    margin-left: 60%;
+    background-color: rgba(1, 1, 1, 0.5);
+    height: 100%;
+    flex-direction: column;
+}
+
+header .homepage .left .leftmid {
+    background-color: rgba(1, 1, 1, 0.4);
+    padding: 20px;
+}
+
+header .homepage .left .leftmid h1 {
+    color: var(--primary);
+    font-size: 3.6rem;
+    text-align: center;
+}
+
+header .homepage .left .leftmid h3 {
+    color: var(--pure);
+    text-align: center;
+    font-weight: 200;
+}
+
+header .homepage .left .btn-primary {
+    margin: 2% 15% 0 15%;
+    background-color: var(--primary);
+    color: var(--pure);
+    transition: all .4s ease;
+}
+
+header .homepage .left .btn-primary:hover {
+    background-color: var(--pure);
+    color: var(--primary);
+}
+
+
+/* -------------------------SERVICES----------------------------- */
+
+section.services .card-wrapper {
+    margin: 0 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+
+section.services .card-wrapper .card {
+    border: solid 1px rgb(112, 109, 109);
+    text-align: center;
+    position: relative;
+    padding-top: 2rem;
+    text-align: center;
+    transition: all .5s ease;
+}
+
+section.services .card-wrapper .card i {
+    color: var(--primary);
+    font-size: 3rem;
+    margin: 10px;
+}
+
+section.services .card-wrapper .card p {
+    margin: 0% 10% 5% 10%;
+    color: var(--ternary);
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+
+/* -------------------------ABOUT US----------------------------- */
+
+section.aboutus .content img {
+    height: 50vh;
+}
+
+section.aboutus .content .left {
+    /* background-color: blue; */
+    padding: 0 3%;
+}
+
+section.aboutus .content .left h1 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+section.aboutus .content .left .para {
+    font-size: 1.2rem;
+    color: var(--ternary);
+    font-weight: 1000
+}
+
+section.aboutus .content .left p {
+    margin: 2rem 0;
+    font-size: 1.2rem;
+}
+
+section.aboutus .content .left i {
+    color: var(--primary);
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+section.aboutus .content .left li {
+    list-style-type: none;
+}
+
+
+/* -------------------------------CLIENT------------------------------- */
+
+section.client .sponc img {
+    width: 10%;
+    padding: 10px;
+}
+
+
+/* -------------------------------OUR PORTFOLIO------------------------------- */
+
+section.portfolio {
+    background-color: var(--primary);
+}
+
+section.portfolio .photos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+section.portfolio .photos img {
+    width: 100%;
+}
+
+
+/* -------------------------------TESTIMONIALS------------------------------- */
+
+section.testimpnials .review .cards {
+    margin: 7%;
+}
+
+section.testimpnials .review .cards p {
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
+    color: var(--ternary);
+    border: solid 2px var(--ternary);
+    border-radius: 10px;
+}
+
+section.testimpnials .review .cards h1 {
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 5px;
+}
+
+section.testimpnials .review .cards h2 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 100;
+    color: var(--ternary);
+}
+
+
+/* -------------------------------PRICING TABLE------------------------------- */
+
+section.pricing .pricecard .card {
+    border: solid 2px rgb(223, 193, 193);
+    border-top: solid 2px var(--primary);
+    margin: 10px;
+    text-align: center;
+}
+
+section.pricing .pricecard .card h1 {
+    margin: 10px;
+    padding: 30px;
+    font-weight: 100;
+    border-bottom: solid 2px var(--ternary);
+}
+
+section.pricing .pricecard .card p {
+    color: var(--ternary);
+    margin: 10px;
+    padding: 20px 50px;
+}
+
+section.pricing .pricecard .card ul {
+    margin: 20px 0;
+}
+
+section.pricing .pricecard .card li {
+    list-style-type: none;
+    padding: 5px;
+    color: var(--ternary);
+}
+
+section.pricing .pricecard .card .price {
+    font-size: 4rem;
+    font-weight: 300;
+    color: var(--primary);
+    margin: 20px 0;
+}
+
+section.pricing .pricecard .card .btn-price {
+    background-color: var(--pure);
+    color: var(--primary);
+    transition: all .4s ease;
+    border: solid 1px var(--primary);
+    margin: 30px 0;
+    padding: .8rem 8rem !important;
+}
+
+section.pricing .pricecard .card .btn-price:hover {
+    background-color: var(--primary);
+    color: var(--pure);
+}
+
+
+/* -------------------------------GET OUR SERVICES------------------------------- */
+
+section.getour {
+    background-color: var(--primary);
+    color: var(--pure);
+    padding-top: 20px !important;
+}
+
+section.getour h1 {
+    margin: 40px 0;
+}
+
+section.getour p {
+    margin: 0 70px 0 0;
+}
+
+section.getour button {
+    background-color: var(--primary);
+    border: solid 2px var(--pure);
+    color: var(--pure);
+}
+
+section.getour button:hover {
+    background-color: var(--pure);
+    /* border: solid 2px var(--pure); */
+    color: var(--primary);
+}
+
+
+/* -------------------------------OUR TEAM------------------------------- */
+
+section.ourteam .photocard .card {
+    padding: 20px;
+    border: solid 2px var(--primary);
+    text-align: center;
+    margin: 20px;
+}
+
+section.ourteam .photocard .card h1 {
+    padding: 5px;
+}
+
+section.ourteam .photocard .card h3 {
+    padding: 5px;
+    color: var(--ternary);
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+section.ourteam .photocard .card ul li {
+    list-style: none;
+    display: inline-block;
+    border: solid 1px var(--ternary);
+    padding: 5px 10px;
+    margin: 10px;
+    color: var(--ternary);
+    /* align-items: right; */
+}
+
+section.ourteam .photocard .card ul li:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+section.ourteam .photocard .card img {
+    width: 100%;
+}
+
+
+/* -------------------------------CONTACT US------------------------------- */
+
+section.contactus .left i {
+    font-size: 2.8rem;
+    color: var(--primary);
+    /* background-color: var(--primary); */
+    /* padding: 10px; */
+    margin-right: 20px;
+}
+
+section.contactus .left .cont h1 {
+    /* color: var(--ternary); */
+    font-size: 1.5rem;
+}
+
+section.contactus .left .cont h4 {
+    color: var(--ternary);
+    font-size: 1rem;
+}
+
+section.contactus .left .lefttext {
+    padding-bottom: 40px;
+}
+
+section.contactus .right {
+    margin-left: 20%;
+    /* background-color: red; */
+}
+
+section.contactus .right input,
+section.contactus .right textarea {
+    display: block;
+    width: 200%;
+    padding: .5rem;
+    font-size: 1rem;
+    border: 0;
+    border: .5px solid var(--ternary);
+    margin-bottom: 10px;
+}
+
+section.contactus .right .bt {
+    margin-left: 148%;
+    color: var(--pure);
+    background-color: rgb(255, 102, 0);
+}
